@@ -11,3 +11,5 @@ const loadAndCreateWidgets = async () => {
     const data = await loadData();
     createWidgets(data);
 }
+
+loadAndCreateWidgets();

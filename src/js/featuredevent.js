@@ -24,8 +24,26 @@ export class FeaturedEvent {
         </div>
         <div class="button_container">
           <button class="featured_button">Register</button>
-        </div> -->
+        </div>
         `
+        const button = this.element.querySelector(".featured_button");
+        const button1 = document.querySelector(".event_button1");
+
+        const close = document.querySelector(".close");
+        const modal = document.querySelector(".modal");
+
+        const openModal = () => {
+        modal.style.display = "block";
+        };
+
+        button.addEventListener("click", () => openModal());
+
+        window.addEventListener("click", () => {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        });
+
         const futureParent = document.querySelector(this.parentSelector);
         futureParent.appendChild(this.element);
 }

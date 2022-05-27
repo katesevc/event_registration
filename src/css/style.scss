@@ -9,22 +9,79 @@ body {
   width: 100%;
   align-items: center;
   height: 100vh;
+
+  nav {
+    background-color: #dfe1e2;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .nav_start {
+      width: 100%;
+      margin-left: 1em;
+
+      p {
+        font-weight: bold;
+      }
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 1em;
+      width: 100%;
+      a {
+        padding: 0.5rem;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+
+    .nav_container {
+      display: flex;
+      flex-direction: row;
+
+      width: 100%;
+    }
+  }
 }
 
 .featured_event {
   margin-top: 3em;
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 60%;
   height: 40vh;
   justify-content: space-between;
   background-color: lightgray;
   border-radius: 10px;
 
+  .event_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1em;
+    padding-left: 1em;
+
+    .vertical_text {
+      transform: rotate(-90deg);
+      font-weight: bold;
+      white-space: nowrap;
+      margin: 0;
+    }
+  }
+
   .button_container {
     display: flex;
     flex-direction: column-reverse;
     width: 30vh;
+    height: 100%;
     padding-bottom: 1em;
 
     align-items: center;
@@ -39,9 +96,11 @@ body {
     flex-direction: column;
     text-align: start;
     width: 50vh;
+    height: 30vh;
 
     h1 {
       font-size: 2em;
+      margin: 0;
     }
 
     p {
@@ -54,7 +113,6 @@ body {
     background-color: red;
     height: 30vh;
     width: 35vh;
-    margin: 2em 1em 2em 2em;
     border: 3px solid gray;
     border-radius: 10px;
   }

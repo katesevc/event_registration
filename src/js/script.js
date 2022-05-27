@@ -28,3 +28,4 @@ window.addEventListener("click", () => {
     modal.style.display = "none";
   }
 });
+loadAndCreateWidgets();

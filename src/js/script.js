@@ -11,21 +11,21 @@ const loadAndCreateWidgets = async () => {
   createWidgets(data);
 };
 
-const button = document.querySelector(".featured_button");
-const button1 = document.querySelector(".event_button1");
+// const button = document.querySelector(".featured_button");
+// const button1 = document.querySelector(".event_button1");
 
-const close = document.querySelector(".close");
-const modal = document.querySelector(".modal");
+// const close = document.querySelector(".close");
+// const modal = document.querySelector(".modal");
 
-const openModal = () => {
-  modal.style.display = "block";
-};
+// const openModal = () => {
+//   modal.style.display = "block";
+// };
 
-button.addEventListener("click", () => openModal());
+// button.addEventListener("click", () => openModal());
 
-window.addEventListener("click", () => {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-});
+// window.addEventListener("click", () => {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// });
 loadAndCreateWidgets();

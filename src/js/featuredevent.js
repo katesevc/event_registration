@@ -14,21 +14,19 @@ export class FeaturedEvent {
         this.element = document.createElement('div');
         this.element.classList.add('featured_event');
         this.element.innerHTML = `
-        
+        <div class="event_name">
+        <p class="vertical_text">FEATURED EVENT</p>
+        </div>
         <div class="picture"></div>
         <div class="description">
-          <h1>${this.name}</h1>
-          <p>${this.description}</p>
+        <h1>${this.name}</h1>
+        <p>${this.description}</p>
         </div>
         <div class="button_container">
           <button class="featured_button">Register</button>
-        </div>
+        </div> -->
         `
         const futureParent = document.querySelector(this.parentSelector);
         futureParent.appendChild(this.element);
-
-
-
 }
-
 }

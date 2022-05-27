@@ -9,6 +9,46 @@ body {
   width: 100%;
   align-items: center;
   height: 100vh;
+
+  nav {
+    background-color: #dfe1e2;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .nav_start {
+      width: 100%;
+      margin-left: 1em;
+
+      p {
+        font-weight: bold;
+      }
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 1em;
+      width: 100%;
+      a {
+        padding: 0.5rem;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+
+    .nav_container {
+      display: flex;
+      flex-direction: row;
+
+      width: 100%;
+    }
+  }
 }
 
 .featured_event {
